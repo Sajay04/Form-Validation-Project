@@ -56,7 +56,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     isValid = false;
   }
 
-  if (!/^\d{5}$/.test(zipcode)) {
+  if (!/^\d{6}$/.test(zipcode)) {
     displayError('zipcodeError', 'Please enter a valid 5-digit zipcode');
     isValid = false;
   }
