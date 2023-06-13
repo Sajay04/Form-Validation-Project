@@ -57,7 +57,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
   }
 
   if (!/^\d{6}$/.test(zipcode)) {
-    displayError('zipcodeError', 'Please enter a valid 5-digit zipcode');
+    displayError('zipcodeError', 'Please enter a valid 6-digit zipcode');
     isValid = false;
   }
   if (password.length < 8 || password === 'password' || password === fullName) {
