@@ -10,7 +10,12 @@ function resetErrors() {
     errorElements[i].textContent = '';
   }
 }
-
+var inputElements = document.getElementsByTagName('input');
+for (var i = 0; i < inputElements.length; i++) {
+  inputElements[i].addEventListener('change', function() {
+    resetErrors();
+  });
+}
 function resetForm() {
   document.getElementById('myForm').reset();
 }
